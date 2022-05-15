@@ -545,6 +545,7 @@
     <ClCompile Include="Utilities\FileUtils.cpp" />
     <ClCompile Include="Dump.cpp" />
     <ClCompile Include="Pcsx2Config.cpp" />
+    <ClCompile Include="x86\VU1dumper.cpp" />
     <ClCompile Include="windows\FlatFileReaderWindows.cpp" />
     <ClCompile Include="Darwin\DarwinFlatFileReader.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
@@ -1024,6 +1025,7 @@
     <ClInclude Include="vtlb.h" />
     <ClInclude Include="MTVU.h" />
     <ClInclude Include="VU.h" />
+    <ClInclude Include="VU1dumper.h" />
     <ClInclude Include="VUmicro.h" />
     <ClInclude Include="x86\iR5900Analysis.h" />
     <ClInclude Include="x86\microVU.h" />

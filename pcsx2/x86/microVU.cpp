@@ -19,6 +19,7 @@
 #include "microVU.h"
 
 #include "common/Perf.h"
+#include "VU1dumper.h"
 
 //------------------------------------------------------------------
 // Micro VU - Main Functions
@@ -445,6 +446,7 @@ void recMicroVU1::Execute(u32 cycles)
 	VU1.VI[REG_TPC].UL <<= 3;
 	((mVUrecCall)microVU1.startFunct)(VU1.VI[REG_TPC].UL, cycles);
 	VU1.VI[REG_TPC].UL >>= 3;
+	VU1Dumper::Dump();
 	if (microVU1.regs().flags & 0x4 && !THREAD_VU1)
 	{
 		microVU1.regs().flags &= ~0x4;
